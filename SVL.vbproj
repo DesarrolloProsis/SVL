@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{007F46D2-6585-40BA-A8B7-130875CEB7A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SVL.My.MyApplication</StartupObject>
+    <RootNamespace>SVL</RootNamespace>
+    <AssemblyName>SVL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SVL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SVL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>r4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.IPNRMSControlLib, Version=2.32.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\MCOJorgeMonroy\Downloads\Ipronet full\IProNetSDKTest\IProNetSDKTest\IProNetSDKTest\bin\Debug\AxInterop.IPNRMSControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.IProNetCamControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\MCOJorgeMonroy\Downloads\Ipronet full\IProNetSDKTest\IProNetSDKTest\IProNetSDKTest\bin\Debug\AxInterop.IProNetCamControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DxVBLibA">
+      <HintPath>C:\Users\MCOJorgeMonroy\Downloads\Ipronet full\IProNetSDKTest\IProNetSDKTest\IProNetSDKTest\bin\Debug\Interop.DxVBLibA.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.IPNRMSControlLib, Version=2.32.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\MCOJorgeMonroy\Downloads\Ipronet full\IProNetSDKTest\IProNetSDKTest\IProNetSDKTest\bin\Debug\Interop.IPNRMSControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IProNetCamControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\MCOJorgeMonroy\Downloads\Ipronet full\IProNetSDKTest\IProNetSDKTest\IProNetSDKTest\bin\Debug\Interop.IProNetCamControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.Reporting, Version=11.1.17.614, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Services.WebApi, Version=11.1.17.614, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XpsRendering, Version=11.1.17.614, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=11.1.17.614, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Office2013Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2017.2.613.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2017.2.613.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarEvento.Designer.vb">
+      <DependentUpon>AgregarEvento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEvento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas.Designer.vb">
+      <DependentUpon>Alertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CarrilesCerrados.Designer.vb">
+      <DependentUpon>CarrilesCerrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarrilesCerrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLR.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLR.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Comentar.Designer.vb">
+      <DependentUpon>Comentar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comentar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correo.vb" />
+    <Compile Include="Dictaminacion.Designer.vb">
+      <DependentUpon>Dictaminacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dictaminacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictaminacionAutomatica.Designer.vb">
+      <DependentUpon>DictaminacionAutomatica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DictaminacionAutomatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edicion.Designer.vb">
+      <DependentUpon>Edicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas.Designer.vb">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroCarriles.Designer.vb">
+      <DependentUpon>FiltroCarriles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroCarriles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroCarrilesCerrados.Designer.vb">
+      <DependentUpon>FiltroCarrilesCerrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroCarrilesCerrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroDeCortes.Designer.vb">
+      <DependentUpon>FiltroDeCortes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroDeCortes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroDeLiquidacion.Designer.vb">
+      <DependentUpon>FiltroDeLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroDeLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroDeReportes.Designer.vb">
+      <DependentUpon>FiltroDeReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroDeReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LiquidacionSinRevision.Designer.vb">
+      <DependentUpon>LiquidacionSinRevision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LiquidacionSinRevision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal1.Designer.vb">
+      <DependentUpon>MDIPrincipal1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Mensajes.vb" />
+    <Compile Include="Observaciones.Designer.vb">
+      <DependentUpon>Observaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Observaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadLogin.Designer.vb">
+      <DependentUpon>RadLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RadLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recuperacion.Designer.vb">
+      <DependentUpon>Recuperacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recuperacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.vb">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Clases\vGlobal.vb" />
+    <Compile Include="Reportes.Designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultadosDeReportes.Designer.vb">
+      <DependentUpon>ResultadosDeReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadosDeReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemaCLRDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaCLRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaCLRDataSet.vb">
+      <DependentUpon>SistemaCLRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionDeCarriles.Designer.vb">
+      <DependentUpon>VerificacionDeCarriles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionDeCarriles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerificacionDeCortes.Designer.vb">
+      <DependentUpon>VerificacionDeCortes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerificacionDeCortes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarEvento.resx">
+      <DependentUpon>AgregarEvento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas.resx">
+      <DependentUpon>Alertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarrilesCerrados.resx">
+      <DependentUpon>CarrilesCerrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comentar.resx">
+      <DependentUpon>Comentar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictaminacion.resx">
+      <DependentUpon>Dictaminacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictaminacionAutomatica.resx">
+      <DependentUpon>DictaminacionAutomatica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edicion.resx">
+      <DependentUpon>Edicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas.resx">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroCarriles.resx">
+      <DependentUpon>FiltroCarriles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroCarrilesCerrados.resx">
+      <DependentUpon>FiltroCarrilesCerrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroDeCortes.resx">
+      <DependentUpon>FiltroDeCortes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroDeLiquidacion.resx">
+      <DependentUpon>FiltroDeLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltroDeReportes.resx">
+      <DependentUpon>FiltroDeReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LiquidacionSinRevision.resx">
+      <DependentUpon>LiquidacionSinRevision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal1.resx">
+      <DependentUpon>MDIPrincipal1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Observaciones.resx">
+      <DependentUpon>Observaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadLogin.resx">
+      <DependentUpon>RadLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recuperacion.resx">
+      <DependentUpon>Recuperacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultadosDeReportes.resx">
+      <DependentUpon>ResultadosDeReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerificacionDeCarriles.resx">
+      <DependentUpon>VerificacionDeCarriles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerificacionDeCortes.resx">
+      <DependentUpon>VerificacionDeCortes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CLR.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CLR.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CLR.dbml.layout">
+      <DependentUpon>CLR.dbml</DependentUpon>
+    </None>
+    <None Include="Liquidacion de Turno.trdp" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Carriles.datasource" />
+    <None Include="My Project\DataSources\CatalogoCarriles.datasource" />
+    <None Include="My Project\DataSources\CLRDataContext.datasource" />
+    <None Include="My Project\DataSources\Cortes.datasource" />
+    <None Include="My Project\DataSources\Declaraciones.datasource" />
+    <None Include="My Project\DataSources\Delegaciones.datasource" />
+    <None Include="My Project\DataSources\Filtro.datasource" />
+    <None Include="My Project\DataSources\FiltroCortes.datasource" />
+    <None Include="My Project\DataSources\FiltroLiquidacion.datasource" />
+    <None Include="My Project\DataSources\FiltroReporte.datasource" />
+    <None Include="My Project\DataSources\frmLiquidacion.datasource" />
+    <None Include="My Project\DataSources\Global_asax.datasource" />
+    <None Include="My Project\DataSources\Liquidaciones.datasource" />
+    <None Include="My Project\DataSources\Login.datasource" />
+    <None Include="My Project\DataSources\MDIInicio.datasource" />
+    <None Include="My Project\DataSources\PersonalCLR.datasource" />
+    <None Include="My Project\DataSources\PersonalPlaza.datasource" />
+    <None Include="My Project\DataSources\Plazas.datasource" />
+    <None Include="My Project\DataSources\ResultadoCarriles.datasource" />
+    <None Include="My Project\DataSources\SistemaCLRDataSet.datasource" />
+    <None Include="My Project\DataSources\SistemaCLRDataSet.DeclaracionesDataTable.datasource" />
+    <None Include="My Project\DataSources\SistemaCLRDataSet.DeclaracionesRow.datasource" />
+    <None Include="My Project\DataSources\SistemaCLRDataSet.DeclaracionesRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\SistemaCLRDataSet.DeclaracionesRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\Tarifas.datasource" />
+    <None Include="My Project\DataSources\TipoCarril.datasource" />
+    <None Include="My Project\DataSources\TipoPago.datasource" />
+    <None Include="My Project\DataSources\TipoPuesto.datasource" />
+    <None Include="My Project\DataSources\TipoUsuario.datasource" />
+    <None Include="My Project\DataSources\TipoVehiculo.datasource" />
+    <None Include="My Project\DataSources\Transacciones.datasource" />
+    <None Include="My Project\DataSources\Turnos.datasource" />
+    <None Include="My Project\DataSources\Usuarios.datasource" />
+    <None Include="My Project\DataSources\VerificacionCarriles.datasource" />
+    <None Include="My Project\DataSources\VistaReporte2.datasource" />
+    <None Include="My Project\DataSources\VistaReportes.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Reportes\Dictamen Liquidacion Cajero-Receptor.trdp" />
+    <None Include="Reportes\Dictamen Liquidacion de Turno-Carril.trdp" />
+    <None Include="Reportes\Dictamen Liquidacion Dia-Caseta.trdp" />
+    <None Include="SistemaCLRDataSet.xsc">
+      <DependentUpon>SistemaCLRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SistemaCLRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SistemaCLRDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SistemaCLRDataSet.xss">
+      <DependentUpon>SistemaCLRDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="r4.ico" />
+    <Content Include="Reportes.ico" />
+    <None Include="Resources\ok1.png" />
+    <None Include="Resources\ok2.png" />
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\transparencia-oscura.png" />
+    <None Include="Resources\8.1.png" />
+    <None Include="Resources\Controles.png" />
+    <None Include="Resources\x1.png" />
+    <None Include="Resources\6.1.png" />
+    <None Include="Resources\7.1.png" />
+    <None Include="Resources\4.1.png" />
+    <None Include="Resources\5.1.png" />
+    <None Include="Resources\3.1.png" />
+    <None Include="Resources\2.1.png" />
+    <None Include="Resources\1.0.png" />
+    <None Include="Resources\Config.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\Uno.png" />
+    <None Include="Resources\ToggleBlanco.png" />
+    <None Include="Resources\menu-toggle.png" />
+    <None Include="Resources\Dictaminacion.png" />
+    <None Include="Resources\equis.png" />
+    <None Include="Resources\Post-it.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\pause2.jpeg" />
+    <None Include="Resources\pause1.png" />
+    <None Include="Resources\stop1.png" />
+    <None Include="Resources\stop2.jpeg" />
+    <None Include="Resources\back press2.png" />
+    <None Include="Resources\back press1.png" />
+    <None Include="Resources\forward2.png" />
+    <None Include="Resources\forward1.png" />
+    <None Include="Resources\play21.png" />
+    <None Include="Resources\play11.png" />
+    <None Include="Resources\play2.png" />
+    <None Include="Resources\play1.png" />
+    <None Include="Resources\PROSIS.png" />
+    <None Include="Resources\Principal.png" />
+    <None Include="Resources\tache.png" />
+    <None Include="Resources\palomita.png" />
+    <None Include="Resources\Fondo-degradado-verde.jpg" />
+    <None Include="Resources\Edicion.png" />
+    <None Include="Resources\recuperacion.png" />
+    <None Include="Resources\AdelantarR2.png" />
+    <None Include="Resources\SiguienteR.png" />
+    <None Include="Resources\StopR2.png" />
+    <None Include="Resources\StopR.png" />
+    <None Include="Resources\PlayR copia.png" />
+    <None Include="Resources\PlayR2 copia.png" />
+    <None Include="Resources\PausaR copia.png" />
+    <None Include="Resources\PauseR2 copia.png" />
+    <None Include="Resources\AtenriorR.png" />
+    <None Include="Resources\RegresarR2 copia.png" />
+    <None Include="Resources\degradado.jpg" />
+    <None Include="Resources\bajaUser.png" />
+    <None Include="Resources\aLTA.png" />
+    <None Include="Resources\ft-casetas.png" />
+    <None Include="Resources\SinVideo.png" />
+    <None Include="Resources\beige.png" />
+    <None Include="Resources\background-gray-abstract-bright-1920x10801.jpg" />
+    <None Include="Resources\r31.png" />
+    <None Include="Resources\r21.png" />
+    <None Include="Resources\apagar.png" />
+    <None Include="Resources\salirredondo.png" />
+    <None Include="Resources\baja.png" />
+    <None Include="Resources\registro.png" />
+    <None Include="Resources\FondoProsis.png" />
+    <None Include="Resources\logochico.png" />
+    <None Include="Resources\salir.png" />
+    <None Include="Resources\r3.png" />
+    <None Include="Resources\r2.png" />
+    <None Include="Resources\Reporte1.png" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\ConVideo11.png" />
+    <None Include="Resources\Dictaminar1.png" />
+    <None Include="Resources\filter_list_214461.png" />
+    <None Include="Resources\Buscar1.png" />
+    <None Include="Resources\Lupa.png" />
+    <None Include="Resources\blanco.jpg" />
+    <None Include="Resources\administrador.png" />
+    <None Include="Resources\CarreteraBN.jpg" />
+    <None Include="Resources\background-gray-abstract-bright-1920x1080.jpg" />
+    <None Include="Resources\FondoAzulClaro.jpg" />
+    <None Include="Resources\FondoAzul.png" />
+    <None Include="Resources\Fondo3.jpg" />
+    <None Include="Resources\Fondo2.jpg" />
+    <None Include="Resources\ConVideo1.png" />
+    <None Include="Resources\ConVideo.png" />
+    <None Include="Resources\Fondo.jpg" />
+    <None Include="Resources\Logo edit.tif" />
+    <None Include="Resources\Logo edit.png" />
+    <None Include="Resources\CAPUFE_logo.png.png" />
+    <None Include="Resources\CAPUFE_logo.svg1.png" />
+    <None Include="Resources\Logo1.png" />
+    <None Include="Resources\Roja.png" />
+    <None Include="Resources\Verde.png" />
+    <None Include="Resources\LineaR.png" />
+    <None Include="Resources\LineaV.png" />
+    <None Include="Resources\imgCapufe.png" />
+    <None Include="Resources\CAPUFE_logo.svg.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\Logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dictaminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirLetras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirNegro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_list_21446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxIProNetCamControl">
+      <Guid>{397843B1-8228-4B92-8407-D6C3319D53F7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DxVBLibA">
+      <Guid>{E1211242-8E94-11D1-8808-00C04FC2C603}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="IProNetCamControl">
+      <Guid>{397843B1-8228-4B92-8407-D6C3319D53F7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirLetras1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PausaR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtenriorR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SiguienteR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegresarR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdelantarR2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdelantarR21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Microsoft\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

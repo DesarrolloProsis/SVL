@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Alejandro\Desktop\SVL\SVL\SVL.vbproj" />
+  <event action="Analyze" type="Success" name="Alertas.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Alertas.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Alejandro\Desktop\SVL\SVL\App.config" />
+  <event action="Analyze" type="Success" name="Dictaminacion.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Dictaminacion.resx" />
+  <event action="Analyze" type="Success" name="DictaminacionAutomatica.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\DictaminacionAutomatica.resx" />
+  <event action="Analyze" type="Success" name="Edicion.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Edicion.resx" />
+  <event action="Analyze" type="Success" name="FiltroCarriles.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\FiltroCarriles.resx" />
+  <event action="Analyze" type="Success" name="FiltroDeCortes.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\FiltroDeCortes.resx" />
+  <event action="Analyze" type="Success" name="FiltroDeLiquidacion.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\FiltroDeLiquidacion.resx" />
+  <event action="Analyze" type="Success" name="FiltroDeReportes.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\FiltroDeReportes.resx" />
+  <event action="Analyze" type="Success" name="Help.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Help.resx" />
+  <event action="Analyze" type="Success" name="Inicio.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Inicio.resx" />
+  <event action="Analyze" type="Success" name="MDIPrincipal1.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\MDIPrincipal1.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Alejandro\Desktop\SVL\SVL\packages.config" />
+  <event action="Analyze" type="Success" name="RadLogin.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\RadLogin.resx" />
+  <event action="Analyze" type="Success" name="Registro.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Registro.resx" />
+  <event action="Analyze" type="Success" name="Reportes.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\Reportes.resx" />
+  <event action="Analyze" type="Success" name="ResultadosDeReportes.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\ResultadosDeReportes.resx" />
+  <event action="Analyze" type="Success" name="VerificacionDeCarriles.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\VerificacionDeCarriles.resx" />
+  <event action="Analyze" type="Success" name="VerificacionDeCortes.resx" path="C:\Users\Alejandro\Desktop\SVL\SVL\VerificacionDeCortes.resx" />
+  <event action="Analyze" type="Success" name="SVL" path="C:\Users\Alejandro\Desktop\SVL\SVL\SVL.vbproj" />
+  <event action="Analyze" type="Success" name="SVL" path="C:\Users\Alejandro\Desktop\SVL\SVL.sln" />
+  <event action="Backup" type="Success" name="SVL" path="C:\Users\Alejandro\Desktop\SVL\SVL\SVL.vbproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Alejandro\Desktop\SVL\SVL\SVL.vbproj" />
+  <event action="Upgrade" type="Success" name="SVL" path="C:\Users\Alejandro\Desktop\SVL\SVL\SVL.vbproj" />
+  <event action="Upgrade" type="Success" name="SVL" path="C:\Users\Alejandro\Desktop\SVL\SVL.sln" />
+</log>

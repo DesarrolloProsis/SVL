@@ -1,0 +1,115 @@
+/* Revisión 2.0.1 Mayo 13, 2010 */
+
+/* Sistema Internet de Presidencia 2010 */
+
+/* Rogelio Argumedo Uribe rogelio.argumedo@sip.gob.mx */
+
+body {
+	background: #FAFAFA no-repeat fixed center top;
+	color:#2F2F2F;
+	margin:0;
+	font-family: Arial;
+}
+
+#cuerpo_principal {
+	margin-top: 1em;
+	width: 100%;
+}
+
+#barra_herramientas {
+	display: table;
+	background-color: silver;
+	width: 100%;
+	padding-top: .4em;
+	padding-bottom: .4em;
+}
+
+#herramientas {
+	padding-top: .5em;
+}
+
+#herramientas a {
+	text-decoration: none;
+	color: maroon;
+}
+
+#herramientas a:hover {
+	text-decoration: underline;
+}
+
+#encabezado {
+	width: 100%;
+	display: table;
+}
+
+#firma_busqueda {
+	display: table;
+}
+
+#imagen_firma {
+		width: 100%;
+	max-width:320px;
+}
+
+.menu_principal {
+	margin-top: .5em;
+}
+
+.menu_principal ul{
+	margin:0;
+	padding:0;
+	text-align: left;
+}
+
+.menu_principal li{
+	display: block;
+	background-color: #5a6159;
+	margin-bottom: .2em;
+}
+
+.menu_principal li a{
+		color: #c6c6c6;
+		text-decoration:none;
+}
+
+.menu_principal li a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.menu_principal li li {
+	margin-left: 1em;
+}
+
+#cuerpo {
+	width: 100%;
+	display: table;
+}
+
+#pie {
+	width: 100%;
+	display: table;
+	background-color: white;
+	border-top: 1px solid green;
+	border-bottom: 1px solid #9c1400;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+#pie_1a {
+	color: #515150;
+	font-size: .85em;
+}
+
+#pie_b {
+	height: 0;
+}
+
+#pie_c {
+	font-weight: bold;
+	font-size: .9em;
+}
+
+#pie_d {
+	height: 0;
+}
